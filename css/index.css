@@ -37,7 +37,6 @@
     
     margin: auto;
     width: 50%;
-    background-color: rgb(153, 153, 153);
     text-align: center;
     font-size: 220%;
 
@@ -45,9 +44,6 @@
 
 
 .descText p{
-    width: 100%;
-    margin: 0px;
-    background-color: rgb(153, 153, 153);
 
     text-align: center;
 
