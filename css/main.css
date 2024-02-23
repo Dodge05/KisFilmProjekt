@@ -31,7 +31,7 @@ header{
     align-items: center;
 
     display: grid;
-    grid-template-columns: 1fr 150px 150px 150px;
+    grid-template-columns: 1fr 150px 150px 150px 150px;
 
     position: fixed;
     width: 100%;
@@ -68,7 +68,7 @@ header a:active{
         align-items: center;
     
         display: grid;
-        grid-template-columns: 0px 1fr 1fr 1fr;
+        grid-template-columns: 0px 1fr 1fr 1fr 1fr;
     
         position: fixed;
         width: 100%;
@@ -81,4 +81,21 @@ header a:active{
 a{
     text-decoration: none;
     color: inherit;
+}
+
+footer{
+    margin-top: 50px;
+    height: 40px;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0));
+}
+
+.footer{
+    background-color: black;
+    height: 80px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    font-weight: bold;
 }
