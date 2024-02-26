@@ -14,9 +14,10 @@ h2, main p{
 
 }
 
+
 .btsDiv1{
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 300px 1fr;
   column-gap: 20px;
 }
 
@@ -28,7 +29,7 @@ h2, main p{
 .btsDiv2{
   display: grid;
   height: 300px;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 300px;
   column-gap: 20px;
 }
 
@@ -41,16 +42,56 @@ h2, main p{
 .bts1 img{
 
   height: 300px;
+  width: 100%;
   aspect-ratio: 16/9;
   object-fit: cover;
+  margin: auto;
+
+}
+
+@media screen and (max-width: 768px) {
+  .btsDiv1{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 10px; 
+    column-gap: 0px;
+    
+}
+
+.btsDiv1 div, .btsDiv2 div{
+  aspect-ratio: 16/9;
+  height: 300px;
+  margin: auto;
+}
+
+.bts1 img{
+  width: auto;
+  aspect-ratio: 16/9;
+}
+
+.btsDiv2{
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: auto;
+  row-gap: 10px; 
+}
+
+.btsDiv2 div{
+  order: 2;
+}
+
+.bts2 div{
+  aspect-ratio: 16/9;
+  height: 300px;
+  margin: auto;
+}
 
 }
 
 
-
 .bts2{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto 1fr;
 
   height: 300px;
   width: 90%;
@@ -61,11 +102,10 @@ h2, main p{
 
 .carousel{
   background-color: gray;
-  width: auto;
   height: 300px;
-  object-fit: cover;
-
   aspect-ratio: 16/9;
+  object-fit: cover;
+  margin: auto;
 
 }
 
@@ -74,6 +114,15 @@ h2, main p{
   display: grid;
   row-gap: 2%;
   grid-template-rows: 15% 83%;
+}
+
+@media screen and (max-width: 1150px) {
+  .bts2{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: auto;
+    row-gap: 10px;
+  }
 }
 
 .bts3{
@@ -88,4 +137,13 @@ h2, main p{
 iframe{
   width: 100%;
   aspect-ratio: 10/4.18
+}
+
+@media screen and (max-width: 610px) {
+  .bts1,.bts2,.bts3{
+    width: 100%;
+  }
+  img,.carousel{
+    width: 100%;
+  }
 }
