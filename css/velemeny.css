@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+header a {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+}
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ccc; 
+    padding: 10px;
+}
+.star {
+    color: gold;
+    font-size: 24px;
+    margin: 0 2px;
+}
+.rating p {
+    margin: 0;
+    padding: 0;
+    flex-grow: 1; 
+}
