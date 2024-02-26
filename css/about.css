@@ -65,3 +65,7 @@ h2,p{
     aspect-ratio: 16/9;
     margin: auto;
 }
+
+.FooterFix{
+    background-color: black;
+}
