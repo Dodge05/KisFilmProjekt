@@ -99,4 +99,15 @@ footer{
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
     font-weight: bold;
+    align-self: center;
+}
+
+.facebook{
+    margin-top: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.facebook img{
+    height: 50px;
 }
