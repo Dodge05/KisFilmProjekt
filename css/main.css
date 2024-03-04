@@ -39,7 +39,7 @@ header{
     align-items: center;
 
     display: grid;
-    grid-template-columns: 1fr 200px 200px 200px 200px ;
+    grid-template-columns: 1fr 225px 225px 225px 225px ;
 
     position: fixed;
     width: 100%;
@@ -90,14 +90,9 @@ a{
     color: inherit;
 }
 
-footer{
-    margin-top: 50px;
-    height: 40px;
-
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0));
-}
 
 .footer{
+    padding-top: 50px;
     background-color: black;
     height: 80px;
 
